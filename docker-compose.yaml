@@ -1,0 +1,10 @@
+version: "3"
+services:
+  runpod:
+    build:
+      dockerfile: Dockerfile
+      context: .
+    volumes:
+      - /root/GroundingDINO
+      - /root/weights
+      - .:/root
